@@ -1,0 +1,48 @@
+{
+  "name": "articles-page",
+  "private": true,
+  "scripts": {
+    "test": "jest --env=jsdom",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/icons-material": "^5.2.0",
+    "@mui/material": "^5.1.1",
+    "babel-jest": "^27.4.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "customize-cra": "^1.0.0",
+    "jest-cli": "^27.3.1",
+    "next": "12.0.4",
+    "react": "17.0.2",
+    "react-app-rewired": "^2.1.11",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.22.2",
+    "react-lazyload": "^3.2.0",
+    "react-query": "^3.33.2",
+    "react-redux": "^7.2.6",
+    "react-select": "^5.2.1",
+    "react-test-renderer": "^17.0.2",
+    "redux-thunk": "^2.4.1",
+    "sass": "^1.43.5"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.11.1",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "enzyme": "^3.11.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4",
+    "jest": "^27.3.1"
+  }
+}

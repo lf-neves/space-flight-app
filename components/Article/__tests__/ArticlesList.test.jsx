@@ -7,29 +7,6 @@ import { changeSearch, changeSort } from '@/store/search';
 
 jest.mock('@/services');
 
-// const client = new QueryClient();
-
-// const setup = (store) => mount(
-//     <QueryClientProvider client={client}>
-//         <Provider store={store}>
-//             <ArticlesList />
-//         </Provider>
-//     </QueryClientProvider>
-// );
-
-// const articleMock = {
-//     id: 123,
-//     featured: false,
-//     title: "String",
-//     url: "String",
-//     imageUrl: "String",
-//     summary: "String",
-//     publishedAt: "String",
-//     launches: null,
-//     events: null,
-// }
-
-
 describe('search action dispatcher', () => {
     let store;
     const searchWord = "Space";

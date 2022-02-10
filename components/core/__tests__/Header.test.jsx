@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../../tests/setupTests'
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { findByTestAttribute } from '../../../tests/testsUtils';
 import Header from '../Header';
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 import Link from 'next/link';
 import { Grid, Typography, Button } from "@mui/material";
 import ArticleInterface from '@/classes/ArticleInterface';
@@ -14,13 +15,14 @@ export const ArticleCard: React.FunctionComponent<Props> = ({ article, index, re
 
     const renderImage = () => (
         <Grid item md={5}>
-            <img
+            <Image
+                loader={({ src }) => src}
                 src={article.imageUrl}
                 alt={article.title}
                 loading="lazy"
-                width="100%"
-                height="260px"
-                style={{ borderRadius: '7px' }}
+                layout="responsive"
+                width="100w"
+                height="85px"
             />
         </Grid>
     );
@@ -35,7 +37,7 @@ export const ArticleCard: React.FunctionComponent<Props> = ({ article, index, re
                     <Typography data-test='cardSummary' sx={{ fontFamily: 'Roboto' }} variant="body1" color="text.secondary">
                         {article.summary}
                     </Typography>
-                    <Link href={`/article/${article.id}`}>
+                    <Link href={`/article/${article.id}`} passHref={true}>
                         <Button data-test='cardButton' sx={{ backgroundColor: '#1E2022', marginTop: 3 }} variant="contained">Ver mais</Button>
                     </Link>
                 </Grid>

@@ -10,15 +10,15 @@ const options = [
 ]
 
 const customStyles = {
-    control: (provided, state) => ({
+    control: (provided) => ({
         ...provided,
         backgroundColor: 'transparent',
     }),
-    menu: (provided, state) => ({
+    menu: (provided) => ({
         ...provided,
         backgroundColor: '#302E53',
     }),
-    singleValue: (provided, state) => ({
+    singleValue: (provided) => ({
         ...provided,
         color: 'white',
     }),

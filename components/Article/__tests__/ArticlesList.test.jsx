@@ -1,38 +1,33 @@
 // 1 - Test get articles from DB
 // 2 - Render articles
 // 3 - Rendering more articles when click on load more button  
-import React from 'react';
-import { storeFactory, findByTestAttribute } from '../../../tests/testsUtils'
-import '../../../tests/setupTests';
-import { changeSearch, changeSort } from '../../../store/search';
-import { mount } from 'enzyme';
-import ArticlesList from '../ArticlesList'
-import { Provider } from 'react-redux';
-import { QueryClientProvider, QueryClient } from 'react-query';
+import { storeFactory } from '@/tests/testsUtils'
+import '@/tests/setupTests';
+import { changeSearch, changeSort } from '@/store/search';
 
-jest.mock('../../../services');
+jest.mock('@/services');
 
-const client = new QueryClient();
+// const client = new QueryClient();
 
-const setup = (store) => mount(
-    <QueryClientProvider client={client}>
-        <Provider store={store}>
-            <ArticlesList />
-        </Provider>
-    </QueryClientProvider>
-);
+// const setup = (store) => mount(
+//     <QueryClientProvider client={client}>
+//         <Provider store={store}>
+//             <ArticlesList />
+//         </Provider>
+//     </QueryClientProvider>
+// );
 
-const articleMock = {
-    id: 123,
-    featured: false,
-    title: "String",
-    url: "String",
-    imageUrl: "String",
-    summary: "String",
-    publishedAt: "String",
-    launches: null,
-    events: null,
-}
+// const articleMock = {
+//     id: 123,
+//     featured: false,
+//     title: "String",
+//     url: "String",
+//     imageUrl: "String",
+//     summary: "String",
+//     publishedAt: "String",
+//     launches: null,
+//     events: null,
+// }
 
 
 describe('search action dispatcher', () => {

@@ -1,9 +1,9 @@
 import React from "react";
-import '../../../tests/setupTests'
+import '@/tests/setupTests'
 import { shallow } from "enzyme";
 import ArticleCard from '../ArticleCard'
 
-import { findByTestAttribute } from '../../../tests/testsUtils'
+import { findByTestAttribute } from '@/tests/testsUtils'
 
 // 1- Have a title
 // 2- Have a Summary text

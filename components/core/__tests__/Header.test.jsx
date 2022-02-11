@@ -1,8 +1,8 @@
 import React from 'react'
-import '../../../tests/setupTests'
+import '@/tests/setupTests'
 import { shallow } from 'enzyme';
-import { findByTestAttribute } from '../../../tests/testsUtils';
-import Header from '../Header';
+import { findByTestAttribute } from '@/tests/testsUtils';
+import { Header } from '@/components/core';
 
 // 1- Just check if Header is rendering correctly
 

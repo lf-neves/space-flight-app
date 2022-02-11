@@ -1,10 +1,10 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import Nav from '../Nav'
+import { Nav } from '@/components/core'
 import { Provider } from 'react-redux';
-import { store } from "../../store/store";
-import '../../tests/setupTests'
-import { findByTestAttribute } from '../../tests/testsUtils';
+import { store } from "@/store/store";
+import '@/tests/setupTests'
+import { findByTestAttribute } from '@/tests/testsUtils';
 
 // 0- test if nav is rendering correctly
 // 1- Test if search input is working 

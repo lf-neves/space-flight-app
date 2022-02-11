@@ -1,7 +1,7 @@
 import React from "react";
 import '@/tests/setupTests'
 import { shallow } from "enzyme";
-import ArticleCard from '../ArticleCard'
+import { ArticleCard } from '@/components/Article'
 
 import { findByTestAttribute } from '@/tests/testsUtils'
 

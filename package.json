@@ -2,7 +2,7 @@
   "name": "articles-page",
   "private": true,
   "scripts": {
-    "test": "jest --env=jsdom",
+    "test": "jest",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -46,6 +46,6 @@
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
     "husky": "^7.0.4",
-    "jest": "^27.3.1"
+    "jest": "^27.5.1"
   }
 }
